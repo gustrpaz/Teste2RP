@@ -10,6 +10,7 @@ using TESTE2RP_API.ViewModels;
 
 namespace TESTE2RP_API.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class LoginController : ControllerBase

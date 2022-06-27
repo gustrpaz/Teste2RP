@@ -7,12 +7,13 @@ using TESTE2RP_API.Repositories;
 
 namespace TESTE2RP_API.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class UserNameController : ControllerBase
     {
         private IUsernameRepository _repository { get; set; }
-
+        
   
         public UserNameController(IUsernameRepository user)
         {
@@ -23,6 +24,7 @@ namespace TESTE2RP_API.Controllers
         /// Method responsible for list all Users
         /// </summary>
         /// <returns></returns>
+        [Authorize(Roles = "1,2")]
         [HttpGet("ListAll")]
         public IActionResult ReadAll() 
         {
@@ -41,6 +43,7 @@ namespace TESTE2RP_API.Controllers
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
+        [Authorize]
         [HttpGet("{Id}")]
         public IActionResult ReadMy(int Id)
         {
@@ -60,6 +63,7 @@ namespace TESTE2RP_API.Controllers
         /// <param name="IdUserName"></param>
         /// <param name="UpdatedUser"></param>
         /// <returns></returns>
+        [Authorize]
         [HttpPut("{IdUserName}")]
         public IActionResult Update(int IdUserName, UserName UpdatedUser)
         {
@@ -86,6 +90,7 @@ namespace TESTE2RP_API.Controllers
             }
         }
 
+        [Authorize]
         [HttpPatch("UpdateOnly/{IdUserName}")]
         public IActionResult UpdateOnly(int IdUserName)
         {
@@ -113,6 +118,7 @@ namespace TESTE2RP_API.Controllers
         /// </summary>
         /// <param name="NewUser"></param>
         /// <returns></returns>
+        [Authorize(Roles = "1,2")]
         [HttpPost]
         public IActionResult Create(UserName NewUser)
         {
@@ -132,6 +138,7 @@ namespace TESTE2RP_API.Controllers
         /// </summary>
         /// <param name="IdUserName"></param>
         /// <returns></returns>
+        [Authorize(Roles = "2")]
         [HttpDelete("{IdUserName}")]
         public IActionResult Delete(int IdUserName)
         {
@@ -155,7 +162,7 @@ namespace TESTE2RP_API.Controllers
                 return BadRequest(Ex);
             }
 
-
+        
 
         }
     }
