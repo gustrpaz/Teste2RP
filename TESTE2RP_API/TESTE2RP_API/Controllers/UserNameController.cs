@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using TESTE2RP_API.Domains;
 using TESTE2RP_API.Interfaces;
 using TESTE2RP_API.Repositories;
+
 
 namespace TESTE2RP_API.Controllers
 {
