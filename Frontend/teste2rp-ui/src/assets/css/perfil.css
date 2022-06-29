@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box;
+      overflow-y: auto; */
+}
+
+.body-perfil {
+  width: 100%;
+  height: 50em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: burlywood; */
+}
+
+.container-perfil {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+
+  /* background-color: rgb(123, 0, 92); */
+}
+
+.container-perfil h1 {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 57px;
+
+  color: #18233D;
+  margin-bottom: 1rem;
+}
+
+.box-perfil {
+  width: 544px;
+  height:587px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #F4F4F4;
+}
+
+.FormPerfil {
+  display: flex;
+  height: 537px;
+  flex-direction: column;
+  align-items: center;
+
+  /* background-color: #84a9ff; */
+}
+
+.InputPerfil {
+  width: 407px;
+  height: 54.54px;
+  padding-left: 1rem;
+  margin-top: 0.7rem;
+
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+
+  background-color: unset;
+  color: #3375BA;
+  border: 3px solid #3475BB;
+}
+
+.SubmitPerfil {
+  width: 130px;
+  height: 40px;
+  margin-top: 4rem;
+  border: none;
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #FFFFFF;
+  background: #3375BA;
+  border-radius: 20px;
+}
+
+.box-Form {
+  width: 100%;
+  height: 7em;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #a0ffb1; */
+}
+
+.box-Form label {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 27px;
+  padding-left: 1rem;
+
+  color: #022041;
+}
+
+.label-perfil {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-btn {
+  border: none;
+  cursor: pointer;
+  background-color: unset;
+}
+
+.edit-btn:hover {
+  scale: 1.1;
+  transition: all .2s ease-in-out;
+}
+
+.Info-User{
+  width: 90%;
+  height: 5em;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  /* background-color: #3375BA; */
+}
+
+.Info-User h3{
+  font-family: 'Exo';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+
+color: #022041;
+}
+
+.Info-User span{
+  color:#3475BB;
+  padding-left: 1rem;
+}

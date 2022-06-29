@@ -1,6 +1,6 @@
-import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 
 import {
   Route,
@@ -48,12 +48,14 @@ const routing = (
   <Router>
     <div>
       <Routes>
-        <Route exact path="/" element={LandingPage} /> {/* LandingPage */}
-        <Route path="/login" element={Login} /> {/* Login */} 
-        {/* <PermissaoAdm path="/listaUsuariosAdm" element={ListaUsuarios} />
-        <PermissaoGeral path="/perfil" element={PerfilUsuario} /> 
-        <PermissaoAdm path="/cadastroUsuario" element={CadastroUsuario} />  */}
-        <Route path="/notFound" element={<NotFound />} /> {/* Not Found */}
+        <Route exact path="/" element={<LandingPage />} />
+        <Route path="/login" element={<Login />} /> 
+        {/* <PermissaoAdm path="/listaUsuariosAdm" element={<ListaUsuarios />}/> */}
+        <Route path="/listaUsuariosAdm" element={<ListaUsuarios />}/>
+        <Route path="/perfil" element={<PerfilUsuario />} /> 
+        <Route path="/cadastroUsuario" element={<CadastroUsuario />} /> 
+        <Route path="/cadastroUsuario" element={<CadastroUsuario />} /> 
+        <Route path="/notFound" element={<NotFound />} /> 
         <Route path="*" element={<Navigate to="notFound" />} /> 
       </Routes>
     </div>
@@ -66,12 +68,13 @@ const ValidateToken = () => {
   console.log(parseJwt())
 }
 
-ReactDOM.render(routing, document.getElementById('root'));
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+ReactDOM.render(
+  routing, 
+  document.getElementById('root'));
 
 
+
+
+
+
+ 
