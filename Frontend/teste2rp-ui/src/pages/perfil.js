@@ -5,7 +5,6 @@ import Header from '../componentes/header/header'
 import Edit from '../assets/img/edit2.png'
 import { API } from '../services/api';
 import { parseJwt, usuarioAutenticado } from '../services/auth'
-import { useNavigate } from 'react-router-dom';
 
 export default function PerfilUsuario() {
 
@@ -16,13 +15,12 @@ export default function PerfilUsuario() {
     const [Email, setEmail] = useState("")
     const [Senha, setSenha] = useState("");
 
-    let history = useNavigate();
 
     function cadastrarNewUser(event) {
         event.preventDefault();
         console.log('entrou no update')
         
-        var myUrl = API + "/api/UserName/" + parseJwt().role
+        var myUrl = API + "/api/UserName/" + parseJwt().jti
         const requestOptions = {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + localStorage.getItem('teste2rp-chave-autenticacao') },

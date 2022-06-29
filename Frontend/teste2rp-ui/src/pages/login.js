@@ -22,7 +22,6 @@ export default function Login() {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + localStorage.getItem('teste2rp-chave-autenticacao') },
-            // body: JSON.stringify({ "email": email, "password": password, "idUser": parseJwt().idUser })
             body: JSON.stringify({ "email": email, "password": password })
         };
 
@@ -34,6 +33,7 @@ export default function Login() {
                             console.log('Logou')
                               localStorage.setItem('teste2rp-chave-autenticacao', data.token);
                                 console.log(parseJwt().role)
+                                console.log(parseJwt())
 
                                 if (parseJwt().role === '1' || parseJwt().role === '2') {
                                     history('/listaUsuariosAdm')

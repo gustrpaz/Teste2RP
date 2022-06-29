@@ -21,6 +21,7 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+        <div className='container-bottom'></div>
       </div>
     </div >
   );
