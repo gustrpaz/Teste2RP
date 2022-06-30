@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;600&family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box;
+    overflow-y: auto; */
+}
+
+.fundo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.body-lista {
+  width: 90%;
+  height: 640px;
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: rgb(189, 57, 57); */
+}
+
+.body-lista h1 {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 53px;
+  text-align: center;
+
+  color: #022041;
+}
+
+.container-lista {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  /* background-color: burlywood; */
+}
+
+.box-tabela {
+  width: 80%;
+}
+
+#tabela-lista {
+  width: 100%;
+  background-color: #18233D;
+}
+
+#tabela-lista td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+
+}
+
+#tabela-lista tr {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+#tabela-lista td, #tabela-lista th {
+  text-align: left;
+  border: 0px solid #f6f6f6;
+  /* border:none; */
+  padding: 10px;
+  white-space: pre-wrap;
+
+  color: #18233D;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 30px;
+}
+
+#tabela-lista th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+
+  background-color: #18233D;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+
+  color: #FFFFFF;
+}
+
+.green {
+  width: 15px;
+  height: 15px;
+  margin-right: 1rem;
+  border-radius: 100%;
+  background:#2A8201;
+}
+
+.red {
+  width: 15px;
+  height: 15px;
+  margin-right: 1rem;
+  border-radius: 100%;
+  background: #CB0000;
+}
+
+.status{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.status img{
+  padding-left: 1rem;
+  width: 20px;
+  height: 20px;
+}
+
+.status button{
+  border: none;
+  background: none;
+  cursor: pointer
+}

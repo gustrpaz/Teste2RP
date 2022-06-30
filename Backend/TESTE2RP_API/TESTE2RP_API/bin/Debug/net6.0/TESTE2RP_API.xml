@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TESTE2RP_API</name>
+    </assembly>
+    <members>
+        <member name="M:TESTE2RP_API.Controllers.LoginController.Login(TESTE2RP_API.ViewModels.LoginViewModel)">
+            <summary>
+            Method responsible for logging into the application
+            </summary>
+            <param name="UserLogin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TESTE2RP_API.Controllers.UserNameController.ReadAll">
+            <summary>
+            Method responsible for list all Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TESTE2RP_API.Controllers.UserNameController.ReadMy(System.Int32)">
+            <summary>
+            Method responsible for list User by unique id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TESTE2RP_API.Controllers.UserNameController.Update(System.Int32,TESTE2RP_API.Domains.UserName)">
+            <summary>
+            Method responsible for update user by unique id 
+            </summary>
+            <param name="IdUserName"></param>
+            <param name="UpdatedUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TESTE2RP_API.Controllers.UserNameController.Create(TESTE2RP_API.Domains.UserName)">
+            <summary>
+            Method responsible for create all users
+            </summary>
+            <param name="NewUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TESTE2RP_API.Controllers.UserNameController.Delete(System.Int32)">
+            <summary>
+            Method responsible for delete user by unique id
+            </summary>
+            <param name="IdUserName"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
